@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AnyAct UI Clone</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f0f4fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .app {
+      width: 360px;
+      height: 600px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* --- Header --- */
+    .header {
+      background: linear-gradient(to right, #e9f4ff, #f9fbfd);
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e5eaf0;
+    }
+    .header .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: #0078d7;
+      font-size: 14px;
+    }
+    .header .logo img {
+      width: 20px;
+      height: 20px;
+    }
+    .header .actions {
+      display: flex;
+      gap: 12px;
+    }
+    .header .actions i {
+      cursor: pointer;
+      font-size: 16px;
+      color: #444;
+      transition: color 0.2s;
+    }
+    .header .actions i:hover {
+      color: #0078d7;
+    }
+
+    /* --- Chat Area --- */
+    .chat-area {
+      flex: 1;
+      padding: 16px;
+      overflow-y: auto;
+      background: #fdfdfd;
+    }
+
+    .chat-input {
+      padding: 10px;
+      border-top: 1px solid #e5eaf0;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: #fff;
+    }
+    .chat-input textarea {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 8px;
+      resize: none;
+      height: 40px;
+      font-family: inherit;
+    }
+    .chat-input button {
+      background: #0078d7;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .chat-input button:hover {
+      background: #005a9e;
+    }
+
+    /* --- Quick Start --- */
+    .quick-start {
+      padding: 12px;
+      border-top: 1px solid #e5eaf0;
+      background: #f9fbfd;
+    }
+    .quick-start h4 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .quick-start .item {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      background: #fff;
+      border: 1px solid #e5eaf0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .quick-start .item:hover {
+      background: #eef6ff;
+    }
+    .quick-start .item i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+  </style>
+  <!-- icons via Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="logo">
+        AnyAct: AI Web Agent & Automation
+      </div>
+      <div class="actions">
+        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid fa-rotate-right"></i>
+        <i class="fa-solid fa-gamepad"></i>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+      <p style="color:#888; text-align:center; margin-top:20px;">What can I help you with?</p>
+    </div>
+
+    <!-- Chat Input -->
+    <div class="chat-input">
+      <textarea placeholder="Type your message..."></textarea>
+      <button>Send</button>
+    </div>
+
+    <!-- Quick Start -->
+    <div class="quick-start">
+      <h4>Quick Start</h4>
+      <div class="item"><i class="fa-regular fa-star"></i> Star us on GitHub!</div>
+      <div class="item"><i class="fa-brands fa-x-twitter"></i> Follow us on X/Twitter!</div>
+      <div class="item"><i class="fa-solid fa-book-open"></i> Explore AI Papers</div>
+    </div>
+  </div>
+</body>
+</html>
